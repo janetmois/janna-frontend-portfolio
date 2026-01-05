@@ -1,5 +1,5 @@
+scroll-behavior: smooth;
 html {
-  scroll-behavior: smooth;
 }
 body {
   background-color: #2c3139;
@@ -18,11 +18,12 @@ body {
 }
 /* header */
 header {
-  width: 100vw;
+  /* width: 100vw; */
   position: fixed;
   background-color: #393f4a;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 100; /* чтобы был поверх остального контента */
 }
 /* navigation */
@@ -86,7 +87,7 @@ h1 {
   background: black;
 }
 /* поменять на другую ширину (шире, иначе не красиво) */
-@media (max-width: 786px){
+@media (max-width: 853px){
   .hamburger {
     display: block;
   }
@@ -387,12 +388,7 @@ p div {
   border: solid 2px #FBFBFB;
   border-radius: 5px;
   padding: 5px 30px;
-  /* padding-right: 30px; */
   width: 13rem;
-  /* margin: 10px; */
-  /* justify-content: end; */
-  /* flex-wrap: wrap; */
-  /* color: inherit; */
   display: inline-block;
 }
 .btn {
@@ -422,16 +418,181 @@ span {
     text-shadow: 2px 4px 4px #000000;
 }
 
-/* .back {
-    color: #FBFBFB;
-    font-size: 26px;
-    font-family: "Raleway", serif;
-    margin-bottom: 30px;
-    text-shadow: 2px 4px 4px #000000;
-    text-decoration: none;
+@media all and (max-width: 1300px){
+    #container {
+        margin-top: 120px;
+    }
+    #particles-js, .particles-js-canvas-el {
+        max-height: 700px;
+    }
 }
-.back:hover {
-    color: black;
-    font-weight: 600;
-} */
-/* animation */
+@media all and (max-width: 1030px){
+    #particles-js, .particles-js-canvas-el {
+        max-height: 500px;
+    }
+    #navigation-title {
+      min-height: 90px;
+    }
+    #container {
+      margin-top: 0px;
+    }
+    #containerAbout {
+      margin-top: 150px;
+      margin-left: 150px;
+    }
+    .text {
+      margin-left: 120px;
+      margin-top: 40px;
+      max-width: 30em;
+    }
+    #containerProjects {
+      margin-top: 90px;
+      margin-left: 150px;
+    }
+    #containerContacts {
+      margin-top: 60px;
+      margin-left: 150px;
+    }
+    #footer {
+      margin-top: 50px;
+    }
+}
+@media all and (max-width: 860px){
+  .pic {
+    width: 100%;
+    max-width: 470px;
+  }
+   .description p.link:not(.title) {
+    -webkit-line-clamp: 4;
+  }
+  .projects {
+    width: auto;
+  }
+  .used {
+    margin-top: 15px;
+  }
+  .project-links {
+    margin-top: 15px;
+  }
+  #containerAbout, #containerProjects, #containerContacts {
+    margin-left: 90px;
+  }
+}
+@media all and (max-width: 820px){
+  #containerAbout, #containerProjects, #containerContacts {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
+@media all and (max-width: 720px){
+  .title {
+    margin-top: 20px;
+  }
+  .text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  #containerProjects {
+    margin-top: 70px;
+  }
+  #project {
+    margin-right: 4vw;
+  }
+  .link {
+    font-size: 15px;
+  }
+  .pic {
+    width: 100%;
+    max-width: 350px;
+  }
+  .used {
+    margin-top: 22px;
+  }
+  .used p {
+    font-size: 14px;
+  }
+  .image {
+    margin-bottom: 10px;
+}
+}
+@media all and (max-width: 650px) and (min-height: 360px){
+  #navigation {
+    min-height: 70px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  h1 {
+    margin-top: 2.5vw;
+    margin-left: 31px;
+    font-size: 24px;
+  }
+  .head {
+      margin-left: 31px;
+      font-size: 12px;
+  }
+  @keyframes border {
+    to {
+      transform: scaleX(1);
+    }
+  }
+  .head::after {
+    width: 180px;           /* конечная длина линии */
+    transform: scaleX(0);
+    transform-origin: left; /* ← СТАРТ ОСТАЁТСЯ ТАМ ЖЕ */
+  }
+  #containerAbout {
+    margin-top: 100px;
+  }
+  #particles-js, .particles-js-canvas-el {
+      max-height: 300px;
+  }
+}
+@media all and (max-width: 450px){
+    h1 {
+        margin-top: 20px;
+        margin-left: 28px;
+        font-size: 21px;
+    }
+    .head {
+        margin-left: 28px;
+        font-size: 9px;
+    }
+    @-webkit-keyframes border {
+        from {width: 28px;}
+        to {width: 202px}
+    }
+    #container {
+        margin-top: 102px;
+        margin-left: 60px;
+    }
+    .menu {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+}
+@media all and (max-width: 250px){
+    h1 {
+        margin-top: 15px;
+        margin-left: 14px;
+        font-size: 16px;
+    }
+    .head {
+        margin-left: 14px;
+        font-size: 6px;
+    }
+    @-webkit-keyframes border {
+        from {width: 14px;}
+        to {width: 150px}
+    }
+    #particles-js, .particles-js-canvas-el {
+        max-height: 500px;
+    }
+    #container {
+        margin-top: 52px;
+        margin-left: 30px;
+    }
+    .menu {
+        font-size: 9px;
+        margin-bottom: 7px;
+    }
+}
