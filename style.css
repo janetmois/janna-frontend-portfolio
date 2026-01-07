@@ -1,5 +1,5 @@
-scroll-behavior: smooth;
 html {
+  scroll-behavior: smooth;
 }
 body {
   background-color: #2c3139;
@@ -522,13 +522,13 @@ span {
     margin-right: 3vw;
   }
   h1 {
-    margin-top: 2.5vw;
+    margin-top: 1vw;
     margin-left: 31px;
-    font-size: 24px;
+    font-size: 32px;
   }
   .head {
       margin-left: 31px;
-      font-size: 12px;
+      font-size: 16px;
   }
   @keyframes border {
     to {
@@ -536,7 +536,7 @@ span {
     }
   }
   .head::after {
-    width: 180px;           /* конечная длина линии */
+    width: 220px;           /* конечная длина линии */
     transform: scaleX(0);
     transform-origin: left; /* ← СТАРТ ОСТАЁТСЯ ТАМ ЖЕ */
   }
@@ -546,53 +546,239 @@ span {
   #particles-js, .particles-js-canvas-el {
       max-height: 300px;
   }
+  .title-page {
+    font-size: 24px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  #containerProjects, #containerContacts {
+    margin-top: 50px;
+  }
+  #project {
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+  }
+  .pic {
+    width: 100%;
+    max-width: 300px;
+  }
+  .used {
+    margin-top: 2vw;
+  }
+  .live-demo {
+    padding: 4px 15px;
+    font-size: 12px;
+  }
+  .github-link img {
+    width: 30px;
+  }
+  #toggleButton {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .contact {
+    font-size: 18px;
+  }
+  .phone {
+    font-size: 16px;
+  }
+  #btn {
+    font-size: 18px;
+    width: 10rem;
+    padding: 3px 15px;
+  }
+  #footer {
+    margin-top: 5vw;
+  }
+  .image {
+    width: 30px;
+    margin: 2vw;
+  }
+  #phrase {
+    font-size: 12px;
+    margin-top: -3vw;
+  }
+}
+@media all and (max-width: 540px){
+  .title-page {
+        font-size: 20px;
+    }
+  .text {
+        font-size: 14px;
+    }
+  .title {
+    font-size: 18px;
+  }
+  .pic {
+    width: 100%;
+    max-width: 250px;
+    object-fit: contain;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .used p {
+    font-size: 11px;
+  }
+  #toggleButton {
+    font-size: 16px;
+  }
+  .contact {
+    font-size: 16px;
+  }
+  #btn {
+    font-size: 16px;
+    width: 8rem;
+    padding: 3px 15px;
+  }
+}
+@media all and (max-width: 500px){
+  .text {
+    margin-left: 5vw;
+    margin-right: 6vw;
+  }
+  #project {
+    flex-direction: column-reverse;
+  }
+  .pic {
+    margin-top: -28vw;
+  }
+  #containerProjects, #containerContacts {
+    margin-top: 30px;
+  }
+  h1, .head {
+    margin-left: 2vw;
+  }
+  .title, .link {
+    margin-left: 5vw;
+  }
+  .contact {
+    margin-left: 23vw;
+  }
 }
 @media all and (max-width: 450px){
-    h1 {
-        margin-top: 20px;
-        margin-left: 28px;
-        font-size: 21px;
-    }
-    .head {
-        margin-left: 28px;
-        font-size: 9px;
-    }
-    @-webkit-keyframes border {
-        from {width: 28px;}
-        to {width: 202px}
-    }
-    #container {
-        margin-top: 102px;
-        margin-left: 60px;
-    }
-    .menu {
-        font-size: 15px;
-        margin-bottom: 13px;
+  /* #container {
+    display: none;
+  } */
+  .hamburger {
+    display: block;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .head::after {
+    width: 170px;
+  }
+  #container {
+    margin-top: 102px;
+    margin-left: 60px;
+  }
+  .menu {
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+  .pic {
+    max-width: 200px;
+  }
+}
+@media all and (max-width: 400px){
+  .pic {
+    max-width: 180px;
+  }
+}
+@media all and (max-width: 380px){
+  .used p {
+        font-size: 10px;
     }
 }
-@media all and (max-width: 250px){
-    h1 {
-        margin-top: 15px;
-        margin-left: 14px;
-        font-size: 16px;
-    }
-    .head {
-        margin-left: 14px;
-        font-size: 6px;
-    }
-    @-webkit-keyframes border {
-        from {width: 14px;}
-        to {width: 150px}
-    }
-    #particles-js, .particles-js-canvas-el {
-        max-height: 500px;
-    }
-    #container {
-        margin-top: 52px;
-        margin-left: 30px;
-    }
-    .menu {
-        font-size: 9px;
-        margin-bottom: 7px;
-    }
+@media all and (max-width: 360px){
+  .text, .link {
+    font-size: 12px;
+  }
+  .contact {
+    font-size: 14px;
+  }
+  .used {
+    flex-direction: column;
+    align-items: end;
+  }
+  .used p {
+    margin-bottom: 1vw;
+    margin-right: 2vw;
+  }
+  .pic {
+    margin-top: -47vw;
+  }
+  .pic.des {
+    margin-top: -43vw;
+  }
+  #containerContacts {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .image {
+    width: 25px;
+    margin-bottom: -1vw;
+  }
+  .live-demo {
+    padding: 3px 10px;
+    font-size: 11px;
+  }
+  .project-links {
+    margin-right: 2vw;
+  }
 }
+@media all and (max-width: 320px){
+  .text, .link {
+    font-size: 10px;
+  }
+  .pic {
+    max-width: 160px;
+    margin-top: -50vw;
+  }
+  .pic.des {
+    margin-top: -46vw;
+  }
+  .used {
+    margin-top: 3vw;
+  }
+}
+/* @media all and (max-width: 300px){
+  #navigation {
+    min-height: 48px;
+    margin: 0;
+    padding: 0 6px;
+  }
+  h1 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .head {
+    font-size: 7px;
+    margin-top: -15px;
+  }
+  @keyframes border {
+    to {
+      transform: scaleX(1);
+    }
+  }
+  .head::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    width: 100px;
+    height: 1.2px;
+  }
+  #particles-js, .particles-js-canvas-el {
+      max-height: 500px;
+  }
+  .bar {
+    height: 2px;
+  }
+  .menu {
+    font-size: 9px;
+    margin-bottom: 7px;
+  }
+} */
