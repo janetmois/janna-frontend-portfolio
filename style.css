@@ -234,9 +234,23 @@ p div {
 }
 .description p.link:not(.title) {
   display: -webkit-box;
-  -webkit-line-clamp: 6; /* количество строк */
+  line-clamp: 6; /* количество строк */
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.description.expanded {
+  max-height: none;
+  overflow: visible;
+}
+.description.expanded p.link:not(.title) {
+  line-clamp: unset;
+  display: block;
+  overflow: visible;
+  cursor: default;
+}
+/* курсор подсказывает, что можно кликнуть */
+.description p.link:not(.title) {
+  cursor: pointer;
 }
 .link {
     color: #FBFBFB;

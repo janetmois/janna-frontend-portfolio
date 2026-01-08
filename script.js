@@ -148,3 +148,9 @@ toggleButton.addEventListener('mouseover', () => {
   rect.offsetHeight; // триггер перерисовки
   rect.style.animation = null; // затем включаем снова
 });
+
+document.querySelectorAll(".description").forEach(desc => {
+  desc.addEventListener("click", () => {
+    desc.classList.toggle("expanded");
+  });
+});
