@@ -1,4 +1,4 @@
-// для анимациии (начало)
+// для анимациии (начало):
 /* ---- particles.js config ---- */
 particlesJS("particles-js", {
   particles: {
@@ -111,6 +111,7 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 // для анимациии (конец)
+// меню:
 const hamburger = document.querySelector(".hamburger");
 const container = document.querySelector("#container");
 
@@ -119,10 +120,11 @@ hamburger.addEventListener("click", () => {
     container.classList.toggle("active");
 })
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".menu").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     container.classList.remove("active");
 }))
+
 /* кнопка для показа остального контента */
 document.getElementById('toggleButton').addEventListener('click', function(){
   const moreContent = document.getElementById('moreContent');
@@ -146,23 +148,3 @@ toggleButton.addEventListener('mouseover', () => {
   rect.offsetHeight; // триггер перерисовки
   rect.style.animation = null; // затем включаем снова
 });
-
-// const button = document.getElementById("toggleButton");
-
-// button.addEventListener("click", () => {
-//   // активируем кнопку один раз
-//   button.classList.add("activated");
-// });
-// const button = document.getElementById("toggleButton");
-// const rect = button.querySelector("rect");
-// const content = document.getElementById("content"); // сворачиваемый блок
-
-// button.addEventListener("click", () => {
-//   // логика сворачивания контента
-//   content.classList.toggle("hidden");
-
-//   // ПЕРЕЗАПУСК анимации
-//   rect.style.animation = "none";
-//   rect.getBoundingClientRect(); // reflow
-//   rect.style.animation = "";
-// });
