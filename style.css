@@ -490,7 +490,7 @@ span {
     max-width: 470px;
   }
    .description p.link:not(.title) {
-    -webkit-line-clamp: 4;
+    line-clamp: 4;
   }
   .projects {
     width: auto;
