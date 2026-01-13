@@ -409,10 +409,10 @@ p div {
     text-decoration: none;
 }
 /* for IOS Safari */
-/* #containerContacts a[href^="tel"] {
+#containerContacts a[href^="tel"] {
     color: #FBFBFB !important;
     text-decoration: none !important;
-} */
+}
 
 /* FOOTER */
 .image {
