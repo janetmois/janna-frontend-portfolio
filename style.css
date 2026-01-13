@@ -404,6 +404,15 @@ p div {
 .btn {
   text-align: center;
 }
+#containerContacts a[href^="tel"] {
+    color: #FBFBFB;
+    text-decoration: none;
+}
+/* for IOS Safari */
+/* #containerContacts a[href^="tel"] {
+    color: #FBFBFB !important;
+    text-decoration: none !important;
+} */
 
 /* FOOTER */
 .image {
