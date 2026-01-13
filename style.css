@@ -923,6 +923,7 @@ span {
   }
   span {
     font-size: 7px;
+    text-decoration: none;
   }
   #phrase {
     font-size: 7px;
