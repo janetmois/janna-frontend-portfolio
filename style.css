@@ -16,7 +16,8 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-/* header */
+
+/* HEADER */
 header {
   /* width: 100vw; */
   position: fixed;
@@ -26,7 +27,7 @@ header {
   right: 0;
   z-index: 100; /* чтобы был поверх остального контента */
 }
-/* navigation */
+/* Navigation */
 #navigation {
   min-height: 110px;
   display: flex;
@@ -72,10 +73,9 @@ h1 {
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
-/* hamburger menu */
+/* Hamburger menu */
 .hamburger {
   display: none;
-  /* далее сделать как в примере, который я нашла */
 }
 .bar {
   display: block;
@@ -86,12 +86,11 @@ h1 {
   transition: all 0.3s ease-in-out;
   background: black;
 }
-/* поменять на другую ширину (шире, иначе не красиво) */
 @media (max-width: 853px){
   .hamburger {
     display: block;
   }
-  /* X при раскрытии меню */
+  /* X after opening menu */
   .hamburger.active .bar:nth-child(2){
     opacity: 0;
   }
@@ -123,11 +122,11 @@ h1 {
 #containerAbout::before,
 #containerProjects::before,
 #containerContacts::before {
-    content: "";
-    display: block;
-    height: 110px; /* примерно высота header */
-    margin-top: -110px; /* компенсируем высоту header */
-    visibility: hidden;
+  content: "";
+  display: block;
+  height: 110px; /* примерно высота header */
+  margin-top: -110px; /* компенсируем высоту header */
+  visibility: hidden;
 }
 /* links container */
 #container {
@@ -161,6 +160,7 @@ h1 {
   border: 1.5px solid black;
   border-radius: 20px;
 }
+
 /* ABOUT */
 #containerAbout {
   margin-top: 200px;
@@ -172,7 +172,7 @@ h1 {
   font-family: "Hind Siliguri", serif;
   max-width: 40em;
   line-height: 1.5;
-  margin-left: 156px; /* потому что выравнивание вертикальное от конца фамилии */
+  margin-left: 156px;
   margin-top: 69px;
 }
 .flight {
@@ -181,6 +181,7 @@ h1 {
 p div {
 	display: inline-block;
 }
+
 /* PROJECTS */
 #containerProjects {
   margin-top: 100px;
@@ -248,7 +249,6 @@ p div {
   overflow: visible;
   cursor: default;
 }
-/* курсор подсказывает, что можно кликнуть */
 .description p.link:not(.title) {
   cursor: pointer;
 }
@@ -276,7 +276,6 @@ p div {
 .used p {
   margin-left: 10px;
   font-family: "Raleway", serif;
-  /* text-shadow: 2px 2px 1px #000000; */
   color: #8794ae;
   font-weight: 900;
 }
@@ -290,7 +289,6 @@ p div {
   font-family: "Raleway", serif;
   color: #8794ae;
   font-size: 20px;
-  /* background-color: transparent; */
   padding: 5px 20px;
   border: none;
   width: 10rem;
@@ -298,7 +296,6 @@ p div {
   position: relative;
   background: transparent;
   cursor: pointer;
-  /* new */
   overflow: hidden;
 }
 .border-svg {
@@ -312,7 +309,6 @@ p div {
   fill: none;
   stroke: #0363ff;
   stroke-width: 1;
-  /* длина линии */
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
 }
@@ -354,17 +350,17 @@ p div {
 .github-link:hover {
   transform: scale(1.1);
 }
+
 /* CONTACTS */
 #containerContacts {
   margin: 100px 0 70px 219px;
-  /* margin-left: 219px; */
 }
 .contact {
-    margin-left: 156px;
-    margin-top: 30px;
-    color: #FBFBFB;
-    font-size: 20px;
-    font-family: "Hind Siliguri", serif;
+  margin-left: 156px;
+  margin-top: 30px;
+  color: #FBFBFB;
+  font-size: 20px;
+  font-family: "Hind Siliguri", serif;
 }
 .phone {
   font-size: 18px;
@@ -406,9 +402,9 @@ p div {
   display: inline-block;
 }
 .btn {
-  /* margin-top: 30px; */
   text-align: center;
 }
+
 /* FOOTER */
 .image {
   margin: 20px;
@@ -432,10 +428,10 @@ span {
     text-shadow: 2px 4px 4px #000000;
 }
 
+/* MOBILE ADAPTATION */
 @media all and (max-width: 1300px){
     #container {
-        /* margin-top: 120px; */
-        padding: 60px 0;
+      padding: 60px 0;
     }
     #particles-js, .particles-js-canvas-el {
         max-height: 700px;
@@ -563,9 +559,9 @@ span {
     }
   }
   .head::after {
-    width: 220px;           /* конечная длина линии */
+    width: 220px;
     transform: scaleX(0);
-    transform-origin: left; /* ← СТАРТ ОСТАЁТСЯ ТАМ ЖЕ */
+    transform-origin: left;
   }
   #container.active {
     width: 40%;
@@ -875,10 +871,6 @@ span {
   img {
     width: 25px;
   }
-  /* 
-  #particles-js, .particles-js-canvas-el {
-      max-height: 500px;
-  } */
   .pic {
     max-width: 130px;
     margin-top: -100vw;
@@ -923,8 +915,8 @@ span {
   }
   span {
     font-size: 7px;
-    text-decoration: none;
-    color: #FBFBFB;
+    /* text-decoration: none;
+    color: #FBFBFB; */
   }
   a[href^="tel"] {
     color: #FBFBFB !important;
