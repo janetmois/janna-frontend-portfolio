@@ -929,14 +929,14 @@ span {
   a[href^="tel"] {
     color: #FBFBFB !important;
     text-decoration: none !important;
-}
-a[href^="tel"]:link,
-a[href^="tel"]:visited,
-a[href^="tel"]:hover,
-a[href^="tel"]:active {
-    color: #FBFBFB;
-    text-decoration: none;
-}
+  }
+  a[href^="tel"]:link,
+  a[href^="tel"]:visited,
+  a[href^="tel"]:hover,
+  a[href^="tel"]:active {
+      color: #FBFBFB;
+      text-decoration: none;
+    }
   #phrase {
     font-size: 7px;
   }
