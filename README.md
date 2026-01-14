@@ -32,8 +32,11 @@ Each project includes a live demo and source code:
 - **Destiny** — Choice-based interactive story application
 
 ## 🌐 Live Demo
+🔗 https://janetmois.github.io/janna-frontend-portfolio/
+
+## 📂 GitHub
 🔗 https://janetmois.github.io/
 
 ## 📬 Contact
-- Email: moisiiadi.zh@gmail.com  
+- Email: janna.moisiiadi@gmail.com  
 - LinkedIn: https://linkedin.com/in/jannamoisiiadi
